@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeCTRL</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+</head>
+
+<header>
+    <div class="ui inverted segment">
+        <div class="ui inverted secondary pointing menu">
+          <a class="item active">Home</a>
+          <a class="item">Ambientes</a>
+          <a class="item">Dispositivos</a>
+          <a class="item">Rotinas</a>
+          <div class="right menu">
+            <a class="ui item active" onclick="window.location.href='cadastrar.html'">Cadastrar Dispositivo</a>
+          </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <section id="tela-inicial">
+        <h1>HomeCTRL</h1>
+        <h2>Todo o controle de sua casa inteligente em um só lugar</h2>
+
+        <div id="button-inicial">
+            <button class="huge ui button">
+                Visualizar Dispositivos
+            </button>
+            <button class="huge ui button" onclick="window.location.href='cadastrar.html'">
+                Cadastrar Dispositivos
+            </button>
+        </div>
+    </section>
+
+    <section id="lista-de-ambientes">
+        <h2 class="ui header">
+            <i class="home icon"></i>
+            <div class="content">
+              Ambientes
+              <div class="sub header">Gerencie seus dispositivos por ambientes.</div>
+            </div>
+        </h2>
+        
+        <div class="ambientes">
+            <div class="ui card">
+                <a class="image">
+                <img src="scr/rooms/sala.jpg">
+                </a>
+                <div class="content">
+                <a class="header">Sala</a>
+                <div class="description">
+                    3 dispositivos ativos.
+                </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui bottom attached button" onclick="window.location.href='cadastrar.html'">
+                        <i class="add icon"></i>
+                        Novo Dispositivo
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui card">
+                <a class="image">
+                <img src="scr/rooms/quarto.jpg">
+                </a>
+                <div class="content">
+                <a class="header">Quarto</a>
+                <div class="description">
+                    4 dispositivos ativos.
+                </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui bottom attached button">
+                        <i class="add icon"></i>
+                        Novo Dispositivo
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui card">
+                <a class="image">
+                <img src="scr/rooms/escritorio.jpg">
+                </a>
+                <div class="content">
+                <a class="header">Escritório</a>
+                <div class="description">
+                    7 dispositivos ativos.
+                </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui bottom attached button">
+                        <i class="add icon"></i>
+                        Novo Dispositivo
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui card">
+                <a class="image">
+                <img src="scr/rooms/cozinha.jpg">
+                </a>
+                <div class="content">
+                <a class="header">Cozinha</a>
+                <div class="description">
+                    2 dispositivos ativos.
+                </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui bottom attached button">
+                        <i class="add icon"></i>
+                        Novo Dispositivo
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

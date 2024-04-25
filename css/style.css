@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    padding: 2rem;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(27, 28, 29);
+    background-size: cover;
+    height: 500px;
+    width: 100vw;
+    display: block;
+    z-index: -10;
+}
+
+h1 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: xx-large;
+}
+
+#tela-inicial {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    position: relative;
+    color: white;
+    height: 40vh;
+}
+
+#tela-inicial h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+#lista-de-ambientes {
+    height: 100vh;
+
+    margin-top: 20vh;
+    margin-left: 20vh;
+}
+
+#lista-de-ambientes h2 {
+    margin-bottom: 5vh;
+}
+
+#lista-de-ambientes .ambientes {
+     /*mobile first*/
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+     gap: 1.5rem;
+ 
+     /* nesting css */
+     
+     @media (min-width: 500px){
+         grid-template-columns: repeat(2, 1fr);
+    }
+ 
+     @media (min-width: 768px){
+         grid-template-columns: repeat(3, 1fr);
+    }
+}

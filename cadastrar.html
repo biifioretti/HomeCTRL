@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeCTRL</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+</head>
+
+<header>
+    <div class="ui inverted segment">
+        <div class="ui inverted secondary pointing menu">
+          <a class="item" onclick="window.location.href='index.html'">Home</a>
+          <a class="item">Ambientes</a>
+          <a class="item">Dispositivos</a>
+          <a class="item">Rotinas</a>
+          <div class="right menu">
+            <a class="ui item active" onclick="window.location.href='cadastrar.html'">Cadastrar Dispositivo</a>
+          </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <section id="formulario-dispositivo">
+        <form class="ui form">
+            <div class="field">
+              <label>Nome dispositivo</label>
+              <input type="text" name="nome-dispositivo" placeholder="Nome dispositivo">
+            </div>
+
+            <div class="field">
+                <label>Descrição</label>
+                <textarea rows="2"></textarea>
+            </div>
+
+            <div class="field">
+                <label>Ambiente</label>
+                <select class="ui search dropdown">
+                  <option value="">Selecione Ambiente</option>
+                  <option value="Sala">Sala</option>
+                  <option value="Quarto">Quarto</option>
+                  <option value="Escritório">Escritório</option>
+                  <option value="Cozinha">Cozinha</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Tipo de conexão</label>
+                <select class="ui search dropdown">
+                  <option value="">Selecione Conexão</option>
+                  <option value="BT">Bluetooh</option>
+                  <option value="Wifi">Wifi</option>
+                </select>
+            </div>
+    </section>
+</body>
