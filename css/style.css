@@ -42,7 +42,7 @@ h1 {
     height: 100vh;
 
     margin-top: 20vh;
-    margin-left: 20vh;
+    margin-left: 15vh;
 }
 
 #lista-de-ambientes h2 {
@@ -62,6 +62,6 @@ h1 {
     }
  
      @media (min-width: 768px){
-         grid-template-columns: repeat(3, 1fr);
+         grid-template-columns: repeat(4, 1fr);
     }
 }

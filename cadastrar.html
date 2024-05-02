@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomeCTRL</title>
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cadastrar.css">
+    <script src="./js/cadastrar.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
@@ -27,36 +28,54 @@
 </header>
 
 <body>
-    <section id="formulario-dispositivo">
+  <div class="texto-inicial">
+    <h1>Cadastrar Dispositivo - HomeCTRL</h1>
+  </div>
+
+  <section id="formulario-dispositivo">
         <form class="ui form">
             <div class="field">
               <label>Nome dispositivo</label>
-              <input type="text" name="nome-dispositivo" placeholder="Nome dispositivo">
+              <input type="text" id="nome" placeholder="Nome dispositivo">
+              <span id="nome-erro" class="error"></span>
             </div>
 
             <div class="field">
                 <label>Descrição</label>
-                <textarea rows="2"></textarea>
+                <textarea id="descricao" rows="2"></textarea>
+                <span id="descricao-erro" class="error"></span>
             </div>
 
             <div class="field">
                 <label>Ambiente</label>
-                <select class="ui search dropdown">
+                <select class="ui search dropdown" id="ambiente">
                   <option value="">Selecione Ambiente</option>
                   <option value="Sala">Sala</option>
                   <option value="Quarto">Quarto</option>
                   <option value="Escritório">Escritório</option>
                   <option value="Cozinha">Cozinha</option>
                 </select>
+                <span id="ambiente-erro" class="error"></span>
             </div>
 
             <div class="field">
                 <label>Tipo de conexão</label>
-                <select class="ui search dropdown">
+                <select class="ui search dropdown" id="tipo-conexao">
                   <option value="">Selecione Conexão</option>
                   <option value="BT">Bluetooh</option>
                   <option value="Wifi">Wifi</option>
                 </select>
+                <span id="tipo-conexao-erro" class="error"></span>
             </div>
-    </section>
+
+            <div class="acoes">
+              <button type="button" id="botao-cadastrar" class="ui secondary button">
+                  Salvar
+              </button>
+              <button class="ui button">
+                <a href="/index.html">Cancelar</a>
+              </button>
+            </div>
+        </form>
+  </section>
 </body>
